@@ -1,0 +1,22 @@
+{
+    "name": "adriandugan/gcdtech-mail",
+    "description": "A simple Mail class for GCDTech",
+    "keywords": ["duggie", "adrian dugan", "code sample"],
+    "license": "none",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^6.4",
+        "mockery/mockery": "^1.0",
+        "phpmailer/phpmailer": "^6.0",
+        "josegonzalez/dotenv": "^3.2"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.1",
+        "phploc/phploc": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
