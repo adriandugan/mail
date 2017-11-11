@@ -28,21 +28,19 @@ use App\Mail;
 
 // Here is an example for an HTML email.
 
-$mail = new Mail;
-
-$mail->addTo('jane.doe@example.com', 'Jane Doe');
-$mail->setSubject('This is the subject line');
-$mail->setHtmlMessage("<h1>Test Message</h1>
-<p>Hello world!</p>");
 
 try {
+    $mail = new Mail;
+    $mail->addTo('jane.doe@example.com', 'Jane Doe');
+    $mail->setSubject('This is the subject line');
+    $mail->setHtmlMessage("<h1>Test Message</h1>
+<p>Hello world!</p>");
     $mail->send();
 } catch (Exception $e) {
-    printf("[code %d] Unable to send your email to: %s (%s) - %s",
-        $e->getCode(),
+    printf("Unable to send your email to: %s (%s) - %s",
         json_encode($mail->getToAddresses()),
         $mail->Subject,
-        $e->getMessage()
+        $mail->ErrorInfo
     );
 }
 ```
