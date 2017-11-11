@@ -10,6 +10,7 @@
 namespace App;
 
 use App\Traits\MailTrait;
+use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
 final class Mail extends PHPMailer
@@ -40,6 +41,8 @@ final class Mail extends PHPMailer
      * Mail constructor.
      *
      * @param bool $exceptions flag to determine whether or not to throw external exceptions?
+     *
+     * @throws Exception
      */
     public function __construct(bool $exceptions = true)
     {
@@ -112,7 +115,8 @@ final class Mail extends PHPMailer
      * Send the message.
      *
      * @return bool
-     * @throws Exception
+     *
+     * @throws Exception see ErrorInfo property for details
      */
     public function send()
     {

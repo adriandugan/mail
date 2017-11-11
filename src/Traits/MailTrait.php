@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Additional functions required by App\Mail.
+ *
+ * @author Duggie
+ * @since  2017-11-11
+ */
+
 namespace App\Traits;
 
 use PHPMailer\PHPMailer\Exception;
@@ -20,6 +27,8 @@ trait MailTrait
 
     /**
      * Set how the mail should be sent.
+     *
+     * @throws Exception for unknown transport drivers
      */
     private function setTransport()
     {
@@ -86,7 +95,8 @@ trait MailTrait
     /**
      * Ensure the email is well-formed before sending it.
      *
-     * @throws Exception
+     * @throws Exception for no From address
+     * @throws Exception for no Subject line
      */
     private function preSendValidation()
     {
