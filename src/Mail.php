@@ -9,8 +9,8 @@
 
 namespace App;
 
-use PHPMailer\PHPMailer\PHPMailer;
 use App\Traits\MailTrait;
+use PHPMailer\PHPMailer\PHPMailer;
 
 final class Mail extends PHPMailer
 {
@@ -112,6 +112,7 @@ final class Mail extends PHPMailer
      * Send the message.
      *
      * @return bool
+     * @throws Exception
      */
     public function send()
     {
