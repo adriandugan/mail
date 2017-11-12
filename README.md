@@ -68,6 +68,8 @@ The maximum function CRAP index score is only **3**. There is minimal complexity
 
 This project uses Codeship to handle a CICD pipeline. Successful builds will automatically generate, commit and push the latest PHPunit test coverage [report](https://adriandugan.github.io/mail/coverage/), and "lines of code" [report](https://adriandugan.github.io/mail/coverage/lines_of_code.txt) to GitHub pages.
 
+![CICD build process uses Codeship to run tests, update code coverage reports and release to GitHub pages](images/gcdtechcicd.gif)
+
 ## Built with...
 
 * TDD - test-driven development, ensuring clean, lean and working code.
