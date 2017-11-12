@@ -4,7 +4,7 @@
 
 A simple emailer class for PHP.
 
-## The original question
+## The original question 
 
 A product we must build will send emails to customers. We know that sending email via SMTP from the customer's server can be problematic so we would like the ability to change our product to use a third party email delivery system in the future - for example SendGrid, Amazon SES or Postmarkapp.com. The specification therefore requires that the email delivery system can be swapped without changing more than a single line of code or configuration file for the entire product.
  
