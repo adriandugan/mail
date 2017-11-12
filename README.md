@@ -17,7 +17,7 @@ Design a class based email sending system with a working implementation for the 
 
 Run `composer install`.
 
-Copy `.env.example` to `.env` and update the settings contained within.
+Configuration is managed via environment variables. For ease of setting these, you may choose to use a dotenv file. You can copy `.env.example` to `.env` and update the settings contained within.
 
 ## Usage
 
@@ -27,7 +27,6 @@ I recommend using autoloading so things "Just Work".
 use App\Mail;
 
 // Here is an example for an HTML email.
-
 
 try {
     $mail = new Mail;
@@ -51,17 +50,17 @@ An example script can be found [here](script.php).
 
 You can run PHPUnit tests: `vendor/bin/phpunit`
 
-A "Lines of code" report is [here](tests/coverage/lines_of_coverage.txt)
+A "Lines of code" report is [here](https://adriandugan.github.io/mail/coverage/lines_of_code.txt)
 
 ## This is CRAP!
 
-**100%** test coverage results, including a CRAP index rating, can be found [here](tests/coverage/).
+**100%** test coverage results, including a CRAP index rating, can be found [here](https://adriandugan.github.io/mail/coverage/).
 
 ![Code coverage overview](images/coverage_overview.png)
 
 I keep CRAP index scores _well below_ the accepted target of "30" per class which results in smaller classes, smaller function declarations. Fewer lines of code means less room for bugs and more maintainable code.
 
-The maximum function score is only **3**. There is minimal complexity here :-)
+The maximum function CRAP index score is only **3**. There is minimal complexity here :-)
 
 ## Built with...
 
