@@ -9,16 +9,7 @@
 
 require_once __DIR__ . '/autoload.php';
 
-use josegonzalez\Dotenv\Loader;
 use App\Mail;
-
-/**
- * Configuration settings are available via environment variables
- * (populated via a dotenv file).
- */
-(new Loader(__DIR__ . '/.env'))
-    ->parse()
-    ->putenv();
 
 /**
  * Send an email.

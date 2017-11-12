@@ -9,3 +9,13 @@
  */
 
 require_once __DIR__ . '/vendor/autoload.php';
+
+use josegonzalez\Dotenv\Loader;
+
+// load the dotenv file. This file won't exist on production.
+$dotenv = __DIR__ . '/.env';
+if (file_exists($dotenv)) {
+    (new Loader($dotenv))
+        ->parse()
+        ->putenv();
+}

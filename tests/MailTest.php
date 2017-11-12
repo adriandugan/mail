@@ -370,32 +370,13 @@ class MailTest extends TestCase
         $mail->send();
     }
 
-    /**
-     * @skip - unfinished test
-     */
-    public function testSend()
+    public function testSendSuccess()
     {
-        // Mock the SMTP class so we can test a successful call to send()
         putenv('MAIL_DRIVER=smtp');
         $mail = new Mail;
         $mail->addTo($this->email);
         $mail->setSubject('Success!');
         $mail->setPlainTextMessage('Test message');
-
-        /* $smtp = $this->getMockBuilder(SMTP::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-
-        $smtp->expects($this->once())
-            ->method('connect')
-            ->willReturn(true);
-
-        $smtp->expects($this->once())
-            ->method('sendCommand')
-            ->willReturn(true);
-
-        $mail->setSMTPInstance($smtp);
-
-        $mail->send(); */
+        $this->assertTrue($mail->send());
     }
 }
