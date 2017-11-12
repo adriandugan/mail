@@ -13,7 +13,7 @@ use App\Traits\MailTrait;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
-final class Mail extends PHPMailer
+class Mail extends PHPMailer
 {
     use MailTrait;
 
