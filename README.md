@@ -64,6 +64,10 @@ I keep CRAP index scores _well below_ the accepted target of "30" per class whic
 
 The maximum function CRAP index score is only **3**. There is minimal complexity here :-)
 
+## Continuous Integration Continuous Deployment (CICD)
+
+This project uses Codeship to handle a CICD pipeline. Successful builds will automatically generate, commit and push the latest PHPunit test coverage [report](https://adriandugan.github.io/mail/coverage/), and "lines of code" [report](https://adriandugan.github.io/mail/coverage/lines_of_code.txt) to GitHub pages.
+
 ## Built with...
 
 * TDD - test-driven development, ensuring clean, lean and working code.
@@ -72,4 +76,4 @@ The maximum function CRAP index score is only **3**. There is minimal complexity
 * [phploc](https://github.com/sebastianbergmann/phploc) - lines of code report generator
 * [FIG-PSR2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) - coding standard 
 * [Composer](https://getcomposer.org/) - PHP package dependency manager
-* [CodeShip](https://codeship.com/) - a Continuous Integration Continous Deployment (CICD) hosted service. Called automatically for _every_ Pull Request.
+* [Codeship](https://codeship.com/) - a Continuous Integration Continous Deployment (CICD) hosted service. Called automatically for _every_ Pull Request.
