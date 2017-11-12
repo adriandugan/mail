@@ -1,10 +1,8 @@
+[ ![Codeship Status for adriandugan/mail](https://app.codeship.com/projects/244c0c80-aa13-0135-4654-425e3af4c55d/status?branch=master)](https://app.codeship.com/projects/256450)
+
 # Mail
 
 A simple emailer class for PHP.
-
----
-[ ![Codeship Status for adriandugan/mail](https://app.codeship.com/projects/244c0c80-aa13-0135-4654-425e3af4c55d/status?branch=master)](https://app.codeship.com/projects/256450)
----
 
 ## The original question
 
