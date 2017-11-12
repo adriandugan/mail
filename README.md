@@ -70,3 +70,4 @@ The maximum function CRAP index score is only **3**. There is minimal complexity
 * [phploc](https://github.com/sebastianbergmann/phploc) - lines of code report generator
 * [FIG-PSR2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) - coding standard 
 * [Composer](https://getcomposer.org/) - PHP package dependency manager
+* [CodeShip](https://codeship.com/) - a Continuous Integration Continous Deployment (CICD) hosted service. Called automatically for _every_ Pull Request.
