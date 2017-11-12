@@ -79,3 +79,4 @@ This project uses Codeship to handle a CICD pipeline. Successful builds will aut
 * [FIG-PSR2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) - coding standard 
 * [Composer](https://getcomposer.org/) - PHP package dependency manager
 * [Codeship](https://codeship.com/) - a Continuous Integration Continous Deployment (CICD) hosted service. Called automatically for _every_ Pull Request.
+* [Mailtrap](https://mailtrap.io) - a dummy SMTP service, ideal for test environments.
